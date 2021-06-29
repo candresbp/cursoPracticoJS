@@ -23,3 +23,4 @@ COLAPSAR# platzi-curso-practico-javascript
 - Tercer paso: crear funciones
 - Cuarto paso: integrar JS con HTML
 # curso-practico-javascript
+
