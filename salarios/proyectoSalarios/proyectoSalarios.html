@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./proyectoSalarios.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Proyectos Practicos JavaScript!</h1>
+    </header>
+
+<main>
+    <section class="endeudamiento">
+        <div class="capacidad-endeudamiento">
+            <p class="parrafo-endeudamiento">capacidad de endeudamiento</p>
+            <br>
+            <form class="formEndeudamiento" action="">
+                <label for="salario">Escribe tu salario mensual</label>
+                <input class="form-style" type="number" id="salario"/>
+                <br>
+                <br>
+                <label for="gastosFijos">Escribe tus gastos fijos mensuales promedio</label>
+                <input class="form-style" type="number" id="gastosFijos">
+                <br>
+                <br>
+                <button class="btn-endeudamiento" type="button" onclick="onClickEndeudamiento()">                        
+                    Calcular capacidad de endeudamiento
+                </button>
+            </form> 
+            <p class="resultado" id="resultE"></p>
+        </div>
+    </section>
+    <section class="ahorro">
+        <div class="capacidad-ahorro">
+            <p class="parrafo-ahorro">capacidad de ahorro</p>
+            <br>
+            <form class="formAhorro" action="">
+                <label for="salario1">Escribe tu salario mensual</label>
+                <input class="form-style" type="number" id="salario1"/>
+                <br>
+                <br>
+                <label for="porcentajeAhorro">Escribe el porcentaje de tu salario que deseas ahorrar</label>
+                <input class="form-style" type="number" id="porcentajeAhorro">
+                <br>
+                <br>
+                <button class="btn-ahorro" type="button" onclick="onClickAhorro()">                        
+                    Calcular capacidad de ahorro
+                </button>
+            </form> 
+            <p class="resultado" id="resultA"></p>
+        </div>
+    </section>
+    <section class="amortizacion">
+        <div class="plan-amortizacion">
+            <p class="parrafo-amortizacion">plan de cuotas para un prestamo</p>
+            <br>
+            <form class="formAmortizacion" action="">
+                <label for="valorPrestamo">Escribe el valor que deseas pedir prestado</label>
+                <input class="form-style" type="number" id="valorPrestamo"/>
+                <br>
+                <br>
+                <label for="cantidadCuotas">A cuantos meses?</label>
+                <input class="form-style" type="number" id="cantidadCuotas">
+                <br>
+                <br>
+                <label for="porcentajeInteres">A que tasa de interes?</label>
+                <input class="form-style" type="number" id="porcentajeInteres">
+                <br>
+                <br>
+                <button class="btn-amortizacion" type="button" onclick="onClickAmortizacion()">                        
+                    Calcular cuotas
+                </button>
+            </form> 
+            <table class="tabla-amortizacion">
+                <tr>
+                    <th class="titulos" id="varolCuotaTitulo">Valor Cuota</th>
+                    <th class="titulos" id="interesesTitulo">Intereses</th>
+                    <th class="titulos" id="amortizacionTitulo">Amortizacion</th>
+                </tr>
+                <tr>
+                    <th data-th="Valor Cuota" class="valores" id="valorCuota"></th>
+                    <th data-th="Intereses" class="valores" id="intereses"></th>
+                    <th data-th="Amortizacion" class="valores" id="amortizacion"></th>
+                </tr>
+            </table>
+        </div>
+    </section>
+</main>
+    <footer>footer</footer>
+<script src="./proyectoSalarios.js"></script>
+<script src="./capacidadAhorro.js"></script>
+<script src="./planAmortizacion.js"></script>
+
+</body>
+</html>
